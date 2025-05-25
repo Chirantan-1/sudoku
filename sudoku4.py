@@ -40,14 +40,7 @@ def s(p, a=0, b=0):
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get('https://sudoku.com') 
 time.sleep(3)
-driver.execute_script("""
-   var l = document.getElementsByClassName("sky-ads")[0];
-   l.parentNode.removeChild(l);
-""")
-driver.execute_script("""
-   var l = document.getElementsByClassName("vidazoo-float")[0];
-   l.parentNode.removeChild(l);
-""")
+
 print(1)
 time.sleep(5)
 canvas = driver.find_element(By.CSS_SELECTOR, '#game canvas')
@@ -58,7 +51,7 @@ image_data = base64.b64decode(data_url.split(',')[1])
 with open('canvas_image.png', 'wb') as f:
     f.write(image_data)
 
-img = cv2.imread("C:/Users/chira_mk2ov0g/OneDrive/Documents/python/canvas_image.png")
+img = cv2.imread("C:/Users/****/Documents/python/canvas_image.png")
 img = cv2.resize(img, (630, 630))
 
 p = []
