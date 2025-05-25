@@ -4,7 +4,7 @@ import numpy as np
 import os
 import cv2
 
-data_dir = 'C:/Users/chira_mk2ov0g/OneDrive/Documents/python/digits'
+data_dir = 'C:/Users/****/Documents/python/digits'
 img_size = 100
 
 x, y = [], []
