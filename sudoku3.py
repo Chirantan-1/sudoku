@@ -43,7 +43,7 @@ image_data = base64.b64decode(data_url.split(',')[1])
 with open('canvas_image.png', 'wb') as f:
     f.write(image_data)
 
-img = cv2.imread("C:/Users/chira_mk2ov0g/OneDrive/Documents/python/canvas_image.png")
+img = cv2.imread("C:/Users/*****/Documents/python/canvas_image.png")
 img = cv2.resize(img, (630, 630))
 
 p = []
