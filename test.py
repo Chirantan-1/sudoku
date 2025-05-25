@@ -11,5 +11,5 @@ def predict_digit(img_path):
     prediction = model.predict(img)
     return np.argmax(prediction)
 
-print(predict_digit("C:/Users/chira_mk2ov0g/OneDrive/Documents/python/digits/1/0a684391deb34abfad13178c9a6fb671.png"))
+print(predict_digit("img path"))
 
